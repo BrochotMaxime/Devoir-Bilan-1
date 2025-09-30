@@ -1,0 +1,29 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/Raleway-Italic-VariableFont_wght.ttf") format("truetype"),
+         url("../font/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+}
+
+header, footer {
+    background-color: rgb(23, 171, 179);
+    color: rgb(255, 255, 255);
+}
+
+aside {
+    background-color: rgb(245, 245, 245);
+}
