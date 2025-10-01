@@ -11,19 +11,113 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
+    font-weight: 400;
+    width: 1160px;
+    margin: 0 auto;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
 
 header, footer {
     background-color: rgb(23, 171, 179);
     color: rgb(255, 255, 255);
 }
 
-aside {
+header img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+header img:hover {
+    cursor: zoom-in;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+main section:first-of-type {
+    width: 345px;
     background-color: rgb(245, 245, 245);
+}
+
+main section:last-of-type {
+    width: 815px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div ul:last-of-type {
+    text-align: right;
+}
+
+main h2 {
+    color: rgb(23, 171, 179);
+    font-weight: 400;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    margin-bottom: 15px;
+}
+
+li {
+    padding: 5px 0;
+    list-style-type: none;
+}
+
+.gras,
+li span:first-of-type {
+    font-weight: 600;
+}
+
+.puce-caree li {
+    list-style-type: square;
+    margin-left: 22px;
+    padding: 0;
+}
+
+li::marker {
+    color: rgb(23, 171, 179);
+    font-size: 1.5rem;
+}
+
+article p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.bleu-clair {
+    color: rgb(23, 171, 179);
+}
+
+li span:nth-child(2) {
+    font-style: italic;
+    font-size: 0.8rem;
 }
