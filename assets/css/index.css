@@ -4,11 +4,16 @@
     padding: 0;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Raleway";
     src: url("../font/Raleway-Italic-VariableFont_wght.ttf") format("truetype"),
          url("../font/Raleway-VariableFont_wght.ttf") format("truetype");
-}
+} */
+
+/* 
+Avec les lignes de code ci-dessus, le texte en Raleway restait en italique quelque soit le font-style choisi.
+J'ai donc choisi d'importer la police avec une balise <link> dans le fichier HTML.
+*/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Lato", sans-serif;
@@ -17,6 +22,22 @@ h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header section:first-of-type {
+    width: 348px;
+    height: 240px;
+    text-align: center;
+    padding: 45px;
+}
+
+header section:nth-of-type(2) {
+    width: 812px;
 }
 
 body {
@@ -38,7 +59,7 @@ header, footer {
     color: rgb(255, 255, 255);
 }
 
-header img {
+header section:first-of-type img {
     object-fit: cover;
     width: 150px;
     height: 150px;
@@ -46,11 +67,47 @@ header img {
     border: 5px solid rgb(255, 255, 255);
 }
 
+header section:nth-of-type(2) {
+    text-align: center;
+}
+
 header img:hover {
     cursor: zoom-in;
 }
 
-section {
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+address div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+address a, address span {
+    display: flex;
+    align-items: center; /* Centrage vertical des icônes et texte */
+    justify-content: center; /* Centrage horizontal */
+    gap: 6px;
+}
+
+address img {
+    margin: 0 10px;
+}
+
+/* address p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+main section {
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -61,12 +118,12 @@ article {
 }
 
 main section:first-of-type {
-    width: 345px;
+    width: 348px;
     background-color: rgb(245, 245, 245);
 }
 
-main section:last-of-type {
-    width: 815px;
+main section:nth-of-type(2) {
+    width: 812px;
 }
 
 /* div {
