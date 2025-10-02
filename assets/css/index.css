@@ -19,6 +19,24 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Lato", sans-serif;
 }
 
+body {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.4rem;
+    margin-top: 30px;
+}
+
+header h2 {
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -38,21 +56,10 @@ header section:first-of-type {
 
 header section:nth-of-type(2) {
     width: 812px;
-}
-
-body {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    width: 1160px;
-    margin: 0 auto;
-}
-
-main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 header, footer {
     background-color: rgb(23, 171, 179);
@@ -79,7 +86,9 @@ address {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 35px;
+    font-style: normal;
+    margin-bottom: 32px;
 }
 
 address div {
@@ -91,21 +100,20 @@ address div {
 
 address a, address span {
     display: flex;
-    align-items: center; /* Centrage vertical des icônes et texte */
-    justify-content: center; /* Centrage horizontal */
+    align-items: center;
+    justify-content: center;
     gap: 6px;
+    margin: 5px;
 }
 
 address img {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
-/* address p {
+main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
+}
 
 main section {
     display: flex;
@@ -126,16 +134,6 @@ main section:nth-of-type(2) {
     width: 812px;
 }
 
-/* div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
-/* div ul:last-of-type {
-    text-align: right;
-} */
-
 main h2 {
     color: rgb(23, 171, 179);
     font-weight: 400;
@@ -149,10 +147,9 @@ li {
     list-style-type: none;
 }
 
-/* .gras,
-li span:first-of-type{
-    font-weight: 600;
-} */
+section:first-of-type img {
+    margin: 0 1px;
+}
 
 .puce-caree li {
     list-style-type: square;
@@ -170,15 +167,6 @@ article p {
     text-align: justify;
 }
 
-/* .bleu-clair {
-    color: rgb(23, 171, 179);
-} */
-
-/* .italique {
-    font-style: italic;
-    font-size: 0.8rem;
-} */
-
 li div:first-of-type {
     display: flex;
     flex-direction: row;
@@ -187,14 +175,55 @@ li div:first-of-type {
 }
 
 li div:first-of-type span:first-of-type {
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 0.95rem;
 }
 
 li div:first-of-type span:nth-of-type(2) {
     color: rgb(23, 171, 179);
 }
 
+section:first-of-type div:first-of-type span:nth-of-type(2) {
+    color: rgb(0, 0, 0);
+}
+
 li div:nth-of-type(2) span {
     font-style: italic;
     font-size: 0.8rem;
+}
+
+main section:nth-of-type(2) li {
+    margin-bottom: 10px;
+}
+
+main section:nth-of-type(2) li:hover {
+    border-left: 5px solid rgb(23, 171, 179);
+    background-color: rgb(227, 227, 227);
+    padding-left: 10px;
+}
+
+footer {
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+footer span {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+footer img:hover {
+    opacity: 0.7;
 }
