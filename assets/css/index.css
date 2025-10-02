@@ -69,15 +69,15 @@ main section:last-of-type {
     width: 815px;
 }
 
-div {
+/* div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+} */
 
-div ul:last-of-type {
+/* div ul:last-of-type {
     text-align: right;
-}
+} */
 
 main h2 {
     color: rgb(23, 171, 179);
@@ -92,10 +92,10 @@ li {
     list-style-type: none;
 }
 
-.gras,
-li span:first-of-type {
+/* .gras,
+li span:first-of-type{
     font-weight: 600;
-}
+} */
 
 .puce-caree li {
     list-style-type: square;
@@ -113,11 +113,31 @@ article p {
     text-align: justify;
 }
 
-.bleu-clair {
+/* .bleu-clair {
+    color: rgb(23, 171, 179);
+} */
+
+/* .italique {
+    font-style: italic;
+    font-size: 0.8rem;
+} */
+
+li div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li div:first-of-type span:first-of-type {
+    font-weight: 600;
+}
+
+li div:first-of-type span:nth-of-type(2) {
     color: rgb(23, 171, 179);
 }
 
-li span:nth-child(2) {
+li div:nth-of-type(2) span {
     font-style: italic;
     font-size: 0.8rem;
 }
